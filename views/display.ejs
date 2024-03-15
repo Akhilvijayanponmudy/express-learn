@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+
+
+
+    <h1>Ditto Gif</h1>
+
+
+    <img src="<%=  gifdata.back_default %>" alt="">
+
+    <!-- Display front default image -->
+    <img src="<%= gifdata.front_default %>" alt="Front Default">
+
+    <!-- Display back default image -->
+    <img src="<%= gifdata.back_default %>" alt="Back Default">
+
+    <!-- Display front shiny image -->
+    <img src="<%= gifdata.front_shiny %>" alt="Front Shiny">
+
+    <!-- Display back shiny image -->
+    <img src="<%= gifdata.back_shiny %>" alt="Back Shiny">
+
+    <h1>Ditto Gif</h1>
+
+    <!-- Display front default image -->
+    <img src="<%= sprite.front_default %>" alt="Front Default">
+
+    <!-- Display back default image -->
+    <img src="<%= sprite.back_default %>" alt="Back Default">
+
+    <!-- Display front shiny image -->
+    <img src="<%= sprite.front_shiny %>" alt="Front Shiny">
+
+    <!-- Display back shiny image -->
+    <img src="<%= sprite.back_shiny %>" alt="Back Shiny">
+
+    <!-- Display other images (e.g., dream_world, official-artwork, showdown) -->
+    <!-- Adjust the code based on which images you want to display -->
+    <!-- For example: -->
+    <h2>Other Images</h2>
+
+    <!-- Display dream world front default image -->
+    <img src="<%= sprite.other.dream_world.front_default %>" alt="Dream World Front Default">
+
+    <!-- Display home front default image -->
+    <img src="<%= sprite.other.home.front_default %>" alt="Home Front Default">
+
+    <!-- Display official artwork front default image -->
+    <img src="<%= sprite.other['official-artwork'].front_default %>" alt="Official Artwork Front Default">
+
+    <!-- Display showdown front default image -->
+    <img src="<%= sprite.other.showdown.front_default %>" alt="Showdown Front Default">
+</body>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!-- item.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item Details</title>
+</head>
+<body>
+
+    <%- include('./partials/header') %>
+
+
+
+    <h1>Edit Item Details</h1>
+    <form action="/items/<%= item.id %>/update" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= item.name %>"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= item.email %>"><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"><%= item.message %></textarea><br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
